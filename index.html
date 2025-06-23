@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Dreamventure Hackathon</title>
+    <link rel="icon" type="image/png" href="/images/logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Major+Mono+Display&display=swap" rel="stylesheet">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <canvas id="shootingStars"></canvas>
+    <div class="stars-container" id="starsContainer"></div>
+    
+    <section id="landingPage">
+        <nav id="navigation">
+            <li><a href="#applyPage">Apply</a></li>
+            <li><a href="#faqPage">FAQ</a></li>
+            <li><a href="#teamPage">Team</a></li>
+        </nav>
+        <h1 id="hook">Beyond the clouds, what dream will you make into a reality?</h1>
+        <div class="cloud-container" id="cloudContainer">
+            <img src="images/arrow.png" alt="cursive_arrow" class="arrow" id="arrow">
+        </div>
+    </section>
+    <section id="storylinePage">
+        <div class="storyline-container">
+            <div id="storyline-bg">
+                <h1 id="storyline">You blink, and the world around you shimmers like a fading memory. Whispers of past dreamers echo in the distance—visions of startups, ideas that sparked, ventures that soared.<br><br> You are trapped in the Dream World, a place where creativity knows no bounds, but success isn't guaranteed. The only way to survive? Navigate the unknown, challenge the impossible, and turn your wildest ideas into reality.<br><br> Will you escape—or will you stay and build something <b><i>unforgettable</i></b>?</h1>
+            </div>
+        </div>  
+        <div class="storyline-container2" id="storyline-container2">
+            <div id="storyline-bg2">
+                <h1 id="storyline2">Here at DreamVenture, Hack Club's first business-oriented hackathon, you will design your perfect escape. </h1>
+            </div>
+        </div>  
+    </section>
+   <section id="astronautpage" style="height: 200vh;">
+
+        <img id="astronaut" src="images/astronaut3.png" alt="Astronaut"/>
+
+        <h1 class="core-topics ct1">Coding</h1>
+        <h1 class="core-topics ct2">Engineering</h1>
+        <h1 class="core-topics ct3">Marketing</h1>
+        <h1 class="core-topics ct4">Entrepreneurship</h1>
+      
+   </section>
+
+   <section id="challengePage">
+        <h1 id="challengeTitle">your challenge ...</h1>
+        <div class="storyline-container">
+            <div id="storyline-bg">
+                <h1 id="storyline">Build a product to conquer someone else's nightmare. You never know what you might encounter: a geese epidemic, talking staplers, or another mystery</h1>
+            </div>
+        </div>  
+   </section>
+    
+
+    <section id="applyPage">
+        <img src="images/logo2.png" alt="Dreamventure logo" id="logo"/>
+        <div class="choice-container" id="choiceContainer">
+            <button class="apply-btn" onclick="window.location.href='#'">WAKE UP AND REGISTER <BR> <span style="color:#1c3a80; font-weight: bold;">NOW</span></button>
+            <a class="dream-btn" href="#faqPage" style="text-decoration: none; font-family: sans-serif;">... or keep dreaming</a>
+            <div class="countdown" id="countdown"></div>
+        </div>
+    </section>
+
+    <section id="faqPage">
+        <h1 style="color: white; text-align: center; padding-top: 40px; font-size: 48px; margin-bottom: 20px;">FAQ & Eligibility</h1>
+        <div class="faq-container">
+            <!-- Venue box with map -->
+
+            <!-- Regular FAQ boxes -->
+
+            <div class="faq-box regular-box">
+                <div class="question">Who can participate?</div>
+                <div class="answer">Answer goes here</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <div class="question">What should I bring?</div>
+                <div class="answer">Answer goes here</div>
+            </div>
+
+            <div class="faq-box regular-box">
+                <div class="question">How do teams work?</div>
+                <div class="answer">Answer</div>
+            </div>
+
+
+            
+            <div class="faq-box regular-box">
+                <div class="question">What if I am traveling?</div>
+                <div class="answer">Answer</div>
+            </div>
+
+            <div class="faq-box venue-box">
+                <div class="venue-info">
+                    <div class="question">Location & Venue</div>
+                    <div class="answer">
+                        Join us at:<br>
+                        Harvard Innovation Labs<br>
+                        125 Western Ave<br>
+                        Boston, MA 02134<br><br>
+                        Experience DreamVenture in the heart of innovation!
+                    </div>
+                </div>
+            
+                <div class="venue-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.439750056791!2d-71.12568812346147!3d42.36340657131553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377604a1cd39d%3A0x659d69f0f417b3a8!2sHarvard%20Innovation%20Labs!5e0!3m2!1sen!2sus!4v1709829937044!5m2!1sen!2sus"
+                        allowfullscreen="" 
+                        loading="eager" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+            </div>
+
+            <div class="faq-box regular-box" >
+                <div class="question" style="color: #c9c1f7;">What's Dream Circle? Come find out!</div>
+                <div class="answer">answer?</div>
+            </div>
+            <div class="faq-box regular-box">
+                <div class="question">Any other questions?</div>
+                <div class="answer">Email us at <b><a href="mailto:dreamventure@hackclub.com" style="color:white">dreamventure@hackclub.com</a></b>!</div>
+            </div>
+
+        </div>
+          
+    </section>
+   
+    <section id="teamPage">
+        <h1 class="team-title">Meet the Dreamers</h1>
+        
+        <div class="team-container-wrapper">
+            <div class="team-container member1">
+                <img src="images/blank.png" alt="Team Member 1" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+            </div>
+            <div class="team-container member2" >
+                <img src="images/blank.png" alt="Team Member 2" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+            </div>
+            <div class="team-container member3" >
+                <img src="images/blank.png" alt="Team Member 3" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+        </div>
+            <div class="team-container member4">
+                <img src="images/blank.png" alt="Team Member 4" class="team-member-img">
+                <h1 class="team-member-name">[name here]</h1>
+            </div>
+
+        </div>
+
+        <div class="sponsor-container">
+            <h1 class="team-title">Sponsors</h1>
+
+        </div>
+    </section>
+   
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const arrow = document.getElementById('arrow');
+            const hook = document.getElementById('hook');
+            setTimeout(() => {
+                arrow.classList.add('visible');
+                setTimeout(() => {hook.classList.add('visible')},500)
+            },2000);
+
+            const storyline = document.getElementById('storyline');
+            const storyline_text = storyline.innerHTML;
+            storyline.innerHTML = '';
+        
+            new TypeIt("#storyline", {
+                strings: storyline_text,
+                speed: 50,
+                waitUntilVisible: true, // waits until scrolled into view
+                lifeLike: true,
+            }).go();
+
+
+            
+            // Function to check if an element is in the viewport
+            function isElementInViewport(el) {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.bottom >= 0
+                );
+            }
+            
+            // Check on scroll and on initial page load
+            function checkVisibility() {
+                if (isElementInViewport(storylineBg) && !hasAnimated) {
+                    typeStoryline();
+                }
+            }
+            
+            // Add scroll event listener
+            window.addEventListener('scroll', checkVisibility);
+            
+            // Check visibility on page load as well
+            checkVisibility();
+
+            const applyPage = document.getElementById('applyPage');
+            const choiceContainer = document.getElementById('choiceContainer');
+
+
+
+
+
+            // Background darkening effect
+            // Optimized background darkening effect
+            let darkeningTicking = false;
+            let lastDarkness = -1; // Track to avoid unnecessary updates
+
+            function updateBackgroundDarkness() {
+                const scrollPosition = window.scrollY;
+                const viewportHeight = window.innerHeight;
+                
+                // Start darkening after page 1
+                if (scrollPosition > viewportHeight) {
+                    const totalScrollDistance = document.documentElement.scrollHeight - (viewportHeight * 2);
+                    const currentScroll = scrollPosition - viewportHeight;
+                    const darkness = Math.min(1, Math.max(0, currentScroll / totalScrollDistance));
+                    
+                    // Only update if darkness changed (avoid constant DOM updates)
+                    if (Math.abs(darkness - lastDarkness) > 0.01) {
+                        const r = Math.round(4 * (1 - darkness));
+                        const g = Math.round(31 * (1 - darkness));
+                        const b = Math.round(78 * (1 - darkness));
+                        
+                        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+                        lastDarkness = darkness;
+                    }
+                } else {
+                    // Only reset if not already at original color
+                    if (lastDarkness !== 0) {
+                        document.body.style.backgroundColor = '#041f4e';
+                        lastDarkness = 0;
+                    }
+                }
+                
+                darkeningTicking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                if (!darkeningTicking) {
+                    requestAnimationFrame(updateBackgroundDarkness);
+                    darkeningTicking = true;
+                }
+            }, { passive: true });
+
+            // Handle page load at any scroll position
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(updateBackgroundDarkness, 100);
+            });
+            //end
+
+
+
+
+
+
+          
+            // Add scroll event listener with throttling
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        checkStorylinePartsVisibility();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+
+            // Check on initial load
+            checkStorylinePartsVisibility();
+        });
+
+
+        window.onscroll = function () {
+            AstronautRotate();
+        };
+
+        function AstronautRotate() {
+            let scrollYvh = (window.scrollY / window.innerHeight) * 100;
+            let image = document.getElementById("astronaut");
+            console.log(window.pageYOffset,window.screenY,window.scrollY,scrollYvh);
+            if (scrollYvh > 275 && (scrollYvh-275)/3 < 100 ) {
+                image.style.transform = 'translateX(' + (scrollYvh-275)/3 + 'vw) translateY(' + (scrollYvh-275) + 'vh) rotate(' + (scrollYvh-275) + 'deg)';
+     
+            }
+        }
+
+        //core topics fade in
+
+        const texts = document.querySelectorAll('.core-topics');
+        
+        function onScroll() {
+            const vh = window.innerHeight;
+            const fadeStart = vh * 0.75; // 75vh
+            const fadeEnd = vh * 0.5;    // 50vh
+
+            texts.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+
+                // Map top position to opacity
+                let opacity = (fadeStart - top) / (fadeStart - fadeEnd);
+                // Clamp between 0 and 1
+                opacity = Math.max(0, Math.min(1, opacity));
+
+                el.style.opacity = opacity;
+            });
+        }
+
+
+        window.addEventListener('scroll', onScroll);
+        onScroll(); // in case some are already in view on load
+        
+
+        // wake up background color change animation
+
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0; //is it phone / tablet (no mouse)
+
+
+        const apply_button = document.getElementsByClassName('apply-btn')[0];
+        const dream_button = document.getElementsByClassName('dream-btn')[0];
+        
+        const astronaut = document.getElementById('astronaut');
+        const stars = document.getElementsByClassName('stars-container')[0];
+
+        const astronautTransformations = window.getComputedStyle(astronaut).transform;
+        
+        let originalBg;
+
+
+        if (!isTouchDevice){
+            apply_button.addEventListener("mouseenter", () => {
+                // Capture current background color just before hover effect
+                hoverTimeout = setTimeout(() => {
+                    originalBg = window.getComputedStyle(document.body).backgroundColor;
+                    document.body.style.backgroundColor = "#3492eb"; // New background
+                    astronaut.src = "images/sun.png";
+                    astronaut.style.transform = astronautTransformations+ ' scale(2)'; // fix scale thing (not working)
+                    stars.style.display = "none";
+                    dream_button.style.borderColor = "#d8e3f0";
+                    dream_button.style.color = "#d8e3f0";
+                    
+
+                    //add if want custom bg
+                    //Object.assign(applyPage.style, {backgroundImage: "url('images/morningbg.png')",backgroundRepeat: "no-repeat",backgroundSize: "cover",backgroundPosition: "center",width: "100vw",height: "100vh"});
+
+
+                    }, 600); // 1 second delay
+                
+                    
+            });
+
+            apply_button.addEventListener("mouseleave", () => {
+                clearTimeout(hoverTimeout);
+                astronaut.src = "images/astronaut2.png";
+                astronaut.style.width = '100px';
+                astronaut.style.height = '100px';
+                stars.style.display = "block"
+                dream_button.style.borderColor = "#4a90e2";
+                dream_button.style.color = "#4a90e2";
+                
+                hoverTimeout = null;
+                if (originalBg) {
+                    document.body.style.backgroundColor = originalBg; // Restore original
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const target = document.getElementById('challengeTitle');
+
+            function challengeScroll() {
+                const rect = target.getBoundingClientRect();
+                const vh = window.innerHeight;
+
+                const start = vh * 0.75;
+                const end = vh * 0.5;
+
+                let progress = (start - rect.top) / (start - end);
+                progress = Math.max(0, Math.min(1, progress)); // Clamp 0–1
+
+                target.style.opacity = progress;
+            }
+
+            window.addEventListener('scroll', challengeScroll);
+            challengeScroll(); // Call once in case it's already in view
+        });
+
+
+        
+
+        
+    </script>
+    
+    <script src="scroll.js"></script> <!-- star zoom in-->
+    <script src="stars.js"></script>
+    <script src="countdown.js"></script>
+    <!-- <script src="shootingStars.js"></script> -->
+</body>
+</html>

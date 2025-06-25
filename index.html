@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>Dreamventure Hackathon</title>
-    <link rel="icon" type="image/png" href="/images/logo1.png">
+    <link rel="icon" type="image/png" href="/images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,11 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Major+Mono+Display&display=swap" rel="stylesheet">
     
-
-    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
 <body>
 
@@ -30,7 +32,7 @@
             <li><a href="#faqPage">FAQ</a></li>
             <li><a href="#teamPage">Team</a></li>
         </nav>
-        <h1 id="hook">Beyond the clouds, what dream will you make into a reality?</h1>
+        <h1 id="hook">Beyond the clouds,<br><b>what dream will you make into a reality?</b></h1>
         <div class="cloud-container" id="cloudContainer">
             <img src="images/arrow.png" alt="cursive_arrow" class="arrow" id="arrow">
         </div>
@@ -59,10 +61,16 @@
    </section>
 
    <section id="challengePage">
-        <h1 id="challengeTitle">your challenge ...</h1>
+        <h1 id="challengeTitle">Your Challenge ...</h1>
+        <div class="storyline-container" style="margin-bottom: 30vh;">
+            <div id="storyline-bg">
+                <h1 id="storyline">Build a product to conquer someone else's nightmare. You never know what you might encounter: a geese epidemic, talking staplers, or another mystery waiting to unfold.</h1>
+            </div>
+        </div>  
         <div class="storyline-container">
             <div id="storyline-bg">
-                <h1 id="storyline">Build a product to conquer someone else's nightmare. You never know what you might encounter: a geese epidemic, talking staplers, or another mystery</h1>
+                <h1 id="storyline" class="final_storyline">This isn't a competition, but a journey. Once you've built your idea, you'll advertise it to the Dream World — crafting a pitch: weaving a story, and convincing others that your solution is the one that can break the cycle.
+                </h1>
             </div>
         </div>  
    </section>
@@ -71,15 +79,15 @@
     <section id="applyPage">
         <img src="images/logo2.png" alt="Dreamventure logo" id="logo"/>
         <div class="choice-container" id="choiceContainer">
-            <button class="apply-btn" onclick="window.location.href='#'">WAKE UP AND REGISTER <BR> <span style="color:#1c3a80; font-weight: bold;">NOW</span></button>
+            <button class="apply-btn" onclick="window.location.href='#'">WAKE UP & REGISTER NOW</button>
             <a class="dream-btn" href="#faqPage" style="text-decoration: none; font-family: sans-serif;">... or keep dreaming</a>
             <div class="countdown" id="countdown"></div>
         </div>
     </section>
 
     <section id="faqPage">
-        <h1 style="color: white; text-align: center; padding-top: 40px; font-size: 48px; margin-bottom: 20px;">FAQ & Eligibility</h1>
         <div class="faq-container">
+            <h1 style="color: white; text-align: center; padding-top: 40px; font-size: 4rem; margin-bottom: 20px;" id="faqTitle">FAQ & Eligibility</h1>
             <!-- Venue box with map -->
 
             <!-- Regular FAQ boxes -->
@@ -106,6 +114,16 @@
                 <div class="answer">Answer</div>
             </div>
 
+            <!--
+            <div class="faq-box regular-box" >
+                <div class="question" style="color: #c9c1f7;">What's Dream Circle? Come find out!</div>
+                <div class="answer">answer?</div>
+            </div> -->
+            <div class="faq-box regular-box">
+                <div class="question">Any other questions?</div>
+                <div class="answer">Email us at <b><a href="mailto:team.dreamventure@gmail.com" style="color:white">team.dreamventure@gmail.com</a></b>!</div>
+            </div>
+
             <div class="faq-box venue-box">
                 <div class="venue-info">
                     <div class="question">Location & Venue</div>
@@ -127,15 +145,6 @@
                     </iframe>
                 </div>
                 
-            </div>
-
-            <div class="faq-box regular-box" >
-                <div class="question" style="color: #c9c1f7;">What's Dream Circle? Come find out!</div>
-                <div class="answer">answer?</div>
-            </div>
-            <div class="faq-box regular-box">
-                <div class="question">Any other questions?</div>
-                <div class="answer">Email us at <b><a href="mailto:dreamventure@hackclub.com" style="color:white">dreamventure@hackclub.com</a></b>!</div>
             </div>
 
         </div>
@@ -167,7 +176,8 @@
 
         <div class="sponsor-container">
             <h1 class="team-title">Sponsors</h1>
-
+            <div class="sponsor-image-container">
+                <a class="sponsor-image" href="https://www.artofproblemsolving.com/"><img src="images/aops.svg" alt="Art of Problem Solving"></a>
         </div>
     </section>
    
@@ -183,54 +193,36 @@
                 setTimeout(() => {hook.classList.add('visible')},500)
             },2000);
 
+
+            //type storylien
             const storyline = document.getElementById('storyline');
             const storyline_text = storyline.innerHTML;
             storyline.innerHTML = '';
         
             new TypeIt("#storyline", {
                 strings: storyline_text,
-                speed: 50,
+                speed: 35,
                 waitUntilVisible: true, // waits until scrolled into view
-                lifeLike: true,
+                lifeLike: false,
             }).go();
 
 
-            
-            // Function to check if an element is in the viewport
-            function isElementInViewport(el) {
-                const rect = el.getBoundingClientRect();
-                return (
-                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.bottom >= 0
-                );
-            }
-            
-            // Check on scroll and on initial page load
-            function checkVisibility() {
-                if (isElementInViewport(storylineBg) && !hasAnimated) {
-                    typeStoryline();
-                }
-            }
-            
-            // Add scroll event listener
-            window.addEventListener('scroll', checkVisibility);
-            
-            // Check visibility on page load as well
-            checkVisibility();
+            const final_storyline = document.getElementsByClassName('final_storyline')[0];
+            const final_storyline_text = final_storyline.innerHTML;
+            final_storyline.innerHTML = '';
+
+            new TypeIt(".final_storyline", {
+                strings: final_storyline_text,
+                speed: 35,
+                waitUntilVisible: true,
+                lifeLike: false,
+            }).go();
 
             const applyPage = document.getElementById('applyPage');
             const choiceContainer = document.getElementById('choiceContainer');
 
-
-
-
-
             // Background darkening effect
-            // Optimized background darkening effect
-            let darkeningTicking = false;
-            let lastDarkness = -1; // Track to avoid unnecessary updates
-
-            function updateBackgroundDarkness() {
+            window.addEventListener('scroll', function() {
                 const scrollPosition = window.scrollY;
                 const viewportHeight = window.innerHeight;
                 
@@ -238,64 +230,87 @@
                 if (scrollPosition > viewportHeight) {
                     const totalScrollDistance = document.documentElement.scrollHeight - (viewportHeight * 2);
                     const currentScroll = scrollPosition - viewportHeight;
-                    const darkness = Math.min(1, Math.max(0, currentScroll / totalScrollDistance));
+                    const darkness = Math.min(1, currentScroll / totalScrollDistance);
                     
-                    // Only update if darkness changed (avoid constant DOM updates)
-                    if (Math.abs(darkness - lastDarkness) > 0.01) {
-                        const r = Math.round(4 * (1 - darkness));
-                        const g = Math.round(31 * (1 - darkness));
-                        const b = Math.round(78 * (1 - darkness));
-                        
-                        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-                        lastDarkness = darkness;
-                    }
+                    const r = Math.round(4 * (1 - darkness));
+                    const g = Math.round(31 * (1 - darkness));
+                    const b = Math.round(78 * (1 - darkness));
+                    
+                    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
                 } else {
-                    // Only reset if not already at original color
-                    if (lastDarkness !== 0) {
-                        document.body.style.backgroundColor = '#041f4e';
-                        lastDarkness = 0;
+                    document.body.style.backgroundColor = '#041f4e';
+                }
+
+                // Check if we've scrolled to middle of page 3
+                const applyPageRect = applyPage.getBoundingClientRect();
+                const halfPageVisible = applyPageRect.top <= viewportHeight / 2;
+                
+                if (halfPageVisible) {
+                    triggerApplyOptions();
+                }
+
+                // Add this new code for second storyline visibility
+                const storylineContainer2 = document.getElementById('storyline-container2');
+                if (storylineContainer2) {
+                    const rect = storylineContainer2.getBoundingClientRect();
+                    const triggerPoint = window.innerHeight * 0.75; // Trigger when container is 75% in view
+                    
+                    if (rect.top <= triggerPoint) {
+                        storylineContainer2.classList.add('visible');
                     }
                 }
-                
-                darkeningTicking = false;
+            });
+
+            function triggerApplyOptions() {
+                    choiceContainer.classList.add('visible');
+                document.getElementById('countdown').classList.add('visible');
+                    startCountdown();
             }
 
-            window.addEventListener('scroll', function() {
-                if (!darkeningTicking) {
-                    requestAnimationFrame(updateBackgroundDarkness);
-                    darkeningTicking = true;
+            function startCountdown() {
+                const countdownElement = document.getElementById('countdown');
+                const targetDate = new Date('2025-08-22T07:00:00').getTime();
+
+                function updateCountdown() {
+                    const now = new Date().getTime();
+                    const timeLeft = targetDate - now;
+
+                    if (timeLeft <= 0) {
+                        countdownElement.textContent = "Event has started!";
+                                return;
+                    }
+
+                    // Calculate days, hours, minutes, seconds
+                    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                    // Display the countdown
+                    countdownElement.textContent = 
+                        `${days}d ${hours.toString().padStart(2, '0')}h ${minutes.toString().padStart(2, '0')}m ${seconds.toString().padStart(2, '0')}s`;
                 }
-            }, { passive: true });
 
-            // Handle page load at any scroll position
-            document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(updateBackgroundDarkness, 100);
-            });
-            //end
+                // Update immediately and then every second
+                updateCountdown();
+                const countdownInterval = setInterval(updateCountdown, 1000);
 
+           
+                window.countdownInterval = countdownInterval;
+            }
 
-
-
-
-
+            // Remove any existing countdown interval when the page loads
+            if (window.countdownInterval) {
+                clearInterval(window.countdownInterval);
+            }
           
-            // Add scroll event listener with throttling
-            let ticking = false;
-            window.addEventListener('scroll', function() {
-                if (!ticking) {
-                    window.requestAnimationFrame(function() {
-                        checkStorylinePartsVisibility();
-                        ticking = false;
-                    });
-                    ticking = true;
-                }
-            });
 
-            // Check on initial load
-            checkStorylinePartsVisibility();
         });
 
 
+
+
+        //astronaut rotation thingy
         window.onscroll = function () {
             AstronautRotate();
         };
@@ -411,14 +426,12 @@
         });
 
 
+
         
 
         
     </script>
-    
-    <script src="scroll.js"></script> <!-- star zoom in-->
     <script src="stars.js"></script>
-    <script src="countdown.js"></script>
-    <!-- <script src="shootingStars.js"></script> -->
+
 </body>
 </html>
